@@ -52,7 +52,7 @@ exports.createParty = async (req, res) => {
             ...req.body,
             company_code: company_code
         });
-        
+
         const savedParty = await newParty.save();
 
         // Check for "Save & New" mode using a query parameter.
